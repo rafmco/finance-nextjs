@@ -61,42 +61,6 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 ## 🛠️ Desenvolvimento
 Para seguir o passo a passo do desenvolvimento deste projeto, consulte o [Guia de Desenvolvimento](DEVELOPMENT_GUIDE.md).
 
-## 🚶‍♂️ Etapas
-
-- Criar Projeto
-  - `npx create-next-app@latest barber-fullstack`
-- Add .env (.env.local e .env.example)
-- Add lib Shadcn/ui
-  - `npx shadcn-ui@latest init`
-- Alteração da estrutura de pastas padrão de componentes Shadcn (components.json):
-  - `@/app/_components`
-  - `@/app/_lib/utils`
-- Instalação dos componentes Shadcn:
-  - `npx shadcn-ui@latest add button`
-  - `npx shadcn-ui@latest add card`
-  - `npx shadcn-ui@latest add sheet`
-  - `npx shadcn-ui@latest add avatar`
-  - `npx shadcn-ui@latest add input`
-  - `npx shadcn-ui@latest add alert-dialog`
-  - `npx shadcn-ui@latest add sonner`
-- Instalar [Automatic Class Order para Tailwind](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
-  - `npm install -D prettier prettier-plugin-tailwindcss`
-  - Add `.prettierrc` (arquivo de configuração do Prettier)
-- Configurar Git Hooks com [Husky](https://www.npmjs.com/package/husky) (rodar eslint nos arquivos alterados antes de commits):
-  - `npm install -D husky lint-staged`
-  - `npx husky init`
-  - .husk/pre-commit `npx lint-staged`
-  - .lintstagedrc.json `{"*.ts?(x)": ["eslint --fix", "prettier --write"]}`
-- Configurar regras do ESlint:
-  - `.eslintrc.json`
-- Configurar padronização das mensagens de commit (compatível com Conventional Commits):
-  - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
-  - Work with Husky 5 -> configurar .husk/commit-msg
-- Instalar Redux:
-  - `npm install @reduxjs/toolkit react-redux redux-persist`
-- Instalar Zod:
-  - `npm install --save-dev zod-prisma-types`
-
 ## 📔 Contribuindo
 
 Para contribuir para este projeto, siga as [Normas de Commit](CONTRIBUTING.md).
