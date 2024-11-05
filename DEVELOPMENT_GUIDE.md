@@ -3,9 +3,7 @@
 ## ❗ Etapas
 
 - Criar Projeto:
-  - NextJS 15 é a Versão atual que usa React 19
-  - Mas devido o React 19 não estar oficialmente estável
-  - Vamos usar NextJS 14:    
+  - NextJS 15 é a Versão atual que usa React 19, mas devido o React 19 não estar oficialmente estável vamos usar NextJS 14:    
   - `npx create-next-app@14.2.16`
   - `? Project named » finance-nextjs`
   - `? TypeScript? » Yes`
