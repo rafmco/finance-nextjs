@@ -73,18 +73,10 @@
   - `npm install -D husky@9.1.6`
   - `npm install -D lint-staged@12.3.2`
   - `npx husky init`
-  - .husk/pre-commit >> `npx lint-staged`
-  - .lintstagedrc.json `{"*.ts?(x)": ["eslint --fix", "prettier --write"]}`
-
-- Configurar regras do ESlint:
-  - `.eslintrc.json`
+  - '/.husk/pre-commit' >> `npx lint-staged`
+  - '/.lintstagedrc.json' >> `{"*.ts?(x)": ["eslint --fix", "prettier --write"]}`
 
 - Configurar padronização das mensagens de commit (compatível com Conventional Commits):
   - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
-  - Work with Husky 5 -> configurar .husk/commit-msg
-
-- Instalar Redux:
-  - `npm install @reduxjs/toolkit react-redux redux-persist`
-
-- Instalar Zod:
-  - `npm install --save-dev zod-prisma-types`
+  - `npm i git-commit-msg-linter@5.0.8`
+  - '/.husk/commit-msg' >> `.git/hooks/commit-msg \$1`
