@@ -23,12 +23,10 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 - [![NextJS][Next.js]][Next-url]
 - [![ReactJS][React.js]][React-url]
 - [![TypeScript][TypeScript]][TypeScript-url]
-- [![NPM][NPM]][NPM-url]
 - [PRISMA](https://www.prisma.io/docs/getting-started)
 - MYSQL
-- CLERK
+- [CLERK](https://clerk.com)
 - STRIPE
-- HUSKY
 
 ## 🚀 Instalação
 
