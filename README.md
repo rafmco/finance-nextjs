@@ -42,7 +42,7 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 ## 💻 Requisitos
 
 - Windows
-  - Node.js
+  - [Node.js](https://nodejs.org/en) 18.18 or later
 
 ## 💻 Extensões recomendadas para VS Code:
 
