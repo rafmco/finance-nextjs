@@ -2,22 +2,24 @@
 
 ## ❗ Etapas
 
-- Criar Projeto
-  \*/NextJS 15 é a Versão atual que usa React 19
-
-* Mas devido o React 19 não estar oficialmente estável
-* Vamos usar NextJS 14:\*/
-
-- `npx create-next-app@14.2.16`
-  ? Project named » finance-nextjs
-  ? TypeScript? » Yes
-  ? ESLint? » Yes
-  ? Tailwind CSS? » Yes
-  ? `src/` directory? » No
-  ? App Router? » Yes
-  ? import alias (@/\*)? » No
-
-- Add .env (.env.local e .env.example)
+- Criar Projeto:
+  - NextJS 15 é a Versão atual que usa React 19
+  - Mas devido o React 19 não estar oficialmente estável
+  - Vamos usar NextJS 14:    
+  - `npx create-next-app@14.2.16`
+  - `? Project named » finance-nextjs`
+  - `? TypeScript? » Yes`
+  - `? ESLint? » Yes`
+  - `? Tailwind CSS? » Yes`
+  - `? src/ directory? » No`
+  - `? App Router? » Yes`
+  - `? import alias (@/\*)? » No`
+- Add .env.local e .env.example:
+  - `DATABASE_URL="mysql://root:password@localhost:3306/finance"`
+- Add lib Prisma 5.21.1
+  - `npm install prisma@5.21.1`
+  - `npx prisma init`
+- Configurar Tabelas em prisma/schema.prisma
 - Add lib Shadcn/ui
   - `npx shadcn-ui@latest init`
 - Alteração da estrutura de pastas padrão de componentes Shadcn (components.json):
