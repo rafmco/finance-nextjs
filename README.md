@@ -24,7 +24,7 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 - [![ReactJS][React.js]][React-url]
 - [![TypeScript][TypeScript]][TypeScript-url]
 - [![NPM][NPM]][NPM-url]
-- PRISMA
+- [PRISMA](https://www.prisma.io/docs/getting-started)
 - MYSQL
 - CLERK
 - STRIPE
