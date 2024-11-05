@@ -12,7 +12,7 @@
 
 - [LinkedIn](https://www.linkedin.com/in/rafmco/)
 
-## 💡Aplicação FullStack em NEXTJS e REACTJS
+## 📊 Controle Financeiro - App FullStack em NEXTJS e REACTJS
 
 Uma plataforma web para para otimizar o seu controle financeiro, seus recebimentos, gastos e investimentos.
 Gerencie suas transações com uma interface intuitiva, transforma a gestão de seu dinheiro em uma experiência ágil e descomplicada.
