@@ -28,6 +28,7 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 - MYSQL
 - CLERK
 - STRIPE
+- HUSKY
 
 ## 🚀 Instalação
 
@@ -56,6 +57,9 @@ Tenhas insights gerados por Inteligência Artificial que lhe ajudarão a gerir m
 - Configurar no VS Code:
   - Setttings -> Editor: Default Formatter = Prettier
   - Setttings -> Editor: Format On Save [x]
+
+## 🛠️ Desenvolvimento
+Para seguir o passo a passo do desenvolvimento deste projeto, consulte o [Guia de Desenvolvimento](DEVELOPMENT_GUIDE.md).
 
 ## 🚶‍♂️ Etapas
 
@@ -102,7 +106,7 @@ Para contribuir para este projeto, siga as [Normas de Commit](CONTRIBUTING.md).
 
 ## 📚 Referências
 
-- 🔗 [FullStackBarber](https://github.com/rafmco/fullstack-barber)
+- 🔗 [FullStackWeek](https://github.com/felipemotarocha/fullstackweek-financeai)
 
 ## © Licença
 
