@@ -5,13 +5,13 @@
 - Criar Projeto:
   - NextJS 15 é a Versão atual que usa React 19, mas devido o React 19 não estar oficialmente estável vamos usar NextJS 14:
   - `npx create-next-app@14.2.16`
-  - `? Project named » finance-nextjs`
-  - `? TypeScript? » Yes`
-  - `? ESLint? » Yes`
-  - `? Tailwind CSS? » Yes`
-  - `? src/ directory? » No`
-  - `? App Router? » Yes`
-  - `? import alias (@/\*)? » No`
+    - `? Project named » finance-nextjs`
+    - `? TypeScript? » Yes`
+    - `? ESLint? » Yes`
+    - `? Tailwind CSS? » Yes`
+    - `? src/ directory? » No`
+    - `? App Router? » Yes`
+    - `? import alias (@/\*)? » No`
 
 - Add .env e .env.example:
   - `DATABASE_URL="mysql://root:password@localhost:3306/finance"`
@@ -33,20 +33,20 @@
 
 - Add lib Shadcn/ui 2.1.3
   - `npx shadcn@2.1.3 init`
-  - `? Style » Default`
-  - `? Base Color » Neutral`
-  - `? Css Variables » Yes`
+    - `? Style » Default`
+    - `? Base Color » Neutral`
+    - `? Css Variables » Yes`
 
 - Alteração da estrutura de pastas padrão de componentes Shadcn:
   - Mover '/lib' para '/app'
   - Renomear para '/_lib' (pasta privada)
-  - `@/app/_lib/utils`
+    - `@/app/_lib/utils`
   - Alterar 'aliases' em '/components.json'
-  - `@/app/_components`
-  - `@/app/_lib/utils`
-  - `@/app/_components/ui`
-  - `@/app/_lib`
-  - `@/app/_hooks`
+    - `@/app/_components`
+    - `@/app/_lib/utils`
+    - `@/app/_components/ui`
+    - `@/app/_lib`
+    - `@/app/_hooks`
   
 - Instalação dos componentes Shadcn:
   - `npx shadcn@2.1.3 add button`
@@ -79,8 +79,10 @@
   - `npm install -D husky@9.1.6`
   - `npm install -D lint-staged@12.3.2`
   - `npx husky init`
-  - '/.husk/pre-commit' >> `npx lint-staged`
-  - '/.lintstagedrc.json' >> `{"*.ts?(x)": ["eslint --fix", "prettier --write"]}`
+  - '/.husk/pre-commit'
+    - `npx lint-staged`
+  - '/.lintstagedrc.json'
+    - `{"*.ts?(x)": ["eslint --fix", "prettier --write"]}`
 
 - Configurar padronização das mensagens de commit (compatível com Conventional Commits):
   - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
