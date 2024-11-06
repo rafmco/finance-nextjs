@@ -56,13 +56,15 @@
     - Criar componente '/app/_components/ui/data-table.tsx'
     - *Criar componente 'columns.tsx' para cada utilização
   - `npx shadcn@2.1.3 add badge`
-
-  - `npx shadcn@2.1.3 add card`
-  - `npx shadcn@2.1.3 add sheet`
-  - `npx shadcn@2.1.3 add avatar`
+  - `npx shadcn@2.1.3 add dialog`
+  - `npx shadcn@2.1.3 add form`
+    - Instala automaticamente as libs [React Hook Form](https://www.react-hook-form.com) e [Zod](https://zod.dev)
+    - Necessário criar um arquivo Zod Schema para cada uso
+  - `npx shadcn@2.1.3 add select`
   - `npx shadcn@2.1.3 add input`
-  - `npx shadcn@2.1.3 add alert-dialog`
-  - `npx shadcn@2.1.3 add sonner`
+  - `npx shadcn@2.1.3 add popover`
+  - `npx shadcn@2.1.3 add calendar`
+    - Create a [Date Picker](https://ui.shadcn.com/docs/components/date-picker) component
 
 - Criar conta [Clerk](https://clerk.com)
   - Cadastrar Aplicação
@@ -92,3 +94,6 @@
 - Instalar lib Prisma Client 5.21.1
   - `npm install @prisma/client@5.21.1`
   - Configurar '\app\_lib\prisma.ts' para não instanciar mais de um Prisma Client em Dev.
+
+- Instalar lib React Number Format 5.4.2
+  - `npm install react-number-format@5.4.2`
