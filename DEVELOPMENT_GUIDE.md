@@ -3,7 +3,7 @@
 ## ❗ Etapas
 
 - Criar Projeto:
-  - NextJS 15 é a Versão atual que usa React 19, mas devido o React 19 não estar oficialmente estável vamos usar NextJS 14:    
+  - NextJS 15 é a Versão atual que usa React 19, mas devido o React 19 não estar oficialmente estável vamos usar NextJS 14:
   - `npx create-next-app@14.2.16`
   - `? Project named » finance-nextjs`
   - `? TypeScript? » Yes`
@@ -50,14 +50,20 @@
   
 - Instalação dos componentes Shadcn:
   - `npx shadcn@2.1.3 add button`
+  - [Shadcn DataTable](https://ui.shadcn.com/docs/components/data-table)
+    - `npx shadcn@2.1.3 add table`
+    - `npm install @tanstack/react-table@8.20.5`
+    - Criar componente '/app/_components/ui/data-table.tsx'
+    - *Criar componente 'columns.tsx' para cada utilização
+  - `npx shadcn@2.1.3 add badge`
 
-  - `npx shadcn-ui@latest add card`
-  - `npx shadcn-ui@latest add sheet`
-  - `npx shadcn-ui@latest add avatar`
-  - `npx shadcn-ui@latest add input`
-  - `npx shadcn-ui@latest add alert-dialog`
-  - `npx shadcn-ui@latest add sonner`
- 
+  - `npx shadcn@2.1.3 add card`
+  - `npx shadcn@2.1.3 add sheet`
+  - `npx shadcn@2.1.3 add avatar`
+  - `npx shadcn@2.1.3 add input`
+  - `npx shadcn@2.1.3 add alert-dialog`
+  - `npx shadcn@2.1.3 add sonner`
+
 - Criar conta [Clerk](https://clerk.com)
   - Cadastrar Aplicação
   - Permitir Sign In por Email e Google
@@ -80,3 +86,7 @@
   - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
   - `npm i git-commit-msg-linter@5.0.8`
   - '/.husk/commit-msg' >> `.git/hooks/commit-msg \$1`
+
+- Instalar lib Prisma Client 5.21.1
+  - `npm install @prisma/client@5.21.1`
+  - Configurar '\app\_lib\prisma.ts' para não instanciar mais de um Prisma Client em Dev.
