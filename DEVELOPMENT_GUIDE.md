@@ -65,6 +65,10 @@
   - `npx shadcn@2.1.3 add popover`
   - `npx shadcn@2.1.3 add calendar`
     - Create a [Date Picker](https://ui.shadcn.com/docs/components/date-picker) component
+  - `npx shadcn@2.1.3 add card`
+  - `npx shadcn@2.1.3 add chart`
+  - `npx shadcn@2.1.3 add progress`
+  - `npx shadcn@2.1.3 add scroll-area`
 
 - Criar conta [Clerk](https://clerk.com)
   - Cadastrar Aplicação
@@ -97,3 +101,23 @@
 
 - Instalar lib React Number Format 5.4.2
   - `npm install react-number-format@5.4.2`
+
+- Transformar '/app/page.tsx' em um `Route Group`
+  - '/app/(home)/page.tsx'
+  - '/app/(home)/_components/...tsx'
+ 
+- Criar conta [Stripe](https://stripe.com)
+  - Catálogo de Produtos
+    - Adicionar Produto
+      - Finance AI: Plano Premium
+      - Mensal
+    - Copiar Product_ID para adicionar ao .env:
+      - `STRIPE_PREMIUM_PLAN_PRICE_ID=Product_ID`
+  - Home
+    - Copiar para adicionar ao .env:
+      - `STRIPE_SECRET_KEY=Secret_Key`
+      - `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=Publishable_Key`
+- Instalar lib [Stripe 17.3.1](https://www.npmjs.com/package/stripe)
+  - `npm install stripe@17.3.1`
+- Instalar lib [Stripe.JS 4.9.0](https://www.npmjs.com/package/@stripe/stripe-js?activeTab=versions)
+  - `npm install @stripe/stripe-js@4.9.0`
