@@ -69,6 +69,9 @@
   - `npx shadcn@2.1.3 add chart`
   - `npx shadcn@2.1.3 add progress`
   - `npx shadcn@2.1.3 add scroll-area`
+  - `npx shadcn@2.1.3 add tooltip`
+  - `npx shadcn@2.1.3 add alert-dialog`
+  - `npx shadcn@2.1.3 add sonner`
 
 - Criar conta [Clerk](https://clerk.com)
   - Cadastrar Aplicação
@@ -121,3 +124,38 @@
   - `npm install stripe@17.3.1`
 - Instalar lib [Stripe.JS 4.9.0](https://www.npmjs.com/package/@stripe/stripe-js?activeTab=versions)
   - `npm install @stripe/stripe-js@4.9.0`
+
+- Configurar WebHooks no Stripe para Atualizar o Clerk ao confirmar Pagamento
+  - [Destinos de Eventos](https://dashboard.stripe.com/test/workbench/webhooks)
+  - Teste com um ouvinte local
+  - Baixe a [Stripe CLI](https://docs.stripe.com/stripe-cli?install-method=docker) (Docker)
+    - `docker run --rm --entrypoint /bin/sh -it stripe/stripe-cli:latest`
+    - `[stripe login](https://github.com/stripe/stripe-cli/issues/497#issuecomment-686558554)`
+    - Conceda acesso acessando link fornecido e o app de autenticação
+  - Encaminhe eventos ao seu destino
+    - `stripe listen --forward-to localhost:3000/api/webhooks/stripe`
+    - Adicione a chave gerada ao .env
+      - `STRIPE_WEBHOOK_SECRET="Webhook_Secret"`
+    - Configurações -> Faturamento -> [Portal do Cliente](https://dashboard.stripe.com/test/settings/billing/portal)
+      - Ativar Link de Teste
+        - Adicione ao .env
+          - `NEXT_PUBLIC_STRIPE_CUSTOMER_PORTAL_URL="Customer_Portal"`
+  - Acione eventos com a CLI
+    - `stripe trigger payment_intent.succeeded`
+   
+- Criar conta [OPEN AI](https://platform.openai.com/docs/overview)
+  - `OPENAI_API_KEY="AI_KEY"`
+- Instalar lib [Open AI](https://www.npmjs.com/package/openai)
+  - `npm i openai@4.71.1`
+ 
+- Instalar lib [react-markdown](https://www.npmjs.com/package/react-markdown)
+  - `npm i react-markdown@9.0.1`
+ 
+- Instalar lib [@tailwindcss/typography](https://www.npmjs.com/package/@tailwindcss/typography)
+  - `npm install -D @tailwindcss/typography@0.5.15`
+
+- Para Deploy:
+  - Package.json
+    - `"prepare": "husky && prisma generate"`
+  - .env
+    - `APP_URL="http://localhost:3000"`
